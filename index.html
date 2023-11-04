@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form Exercise Deyruby</title>
+</head>
+
+<body>
+    <div class="container-fluid bg-black">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Payment form example</h2>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-danger" role="alert">
+                        <p class="fw-bold m-0">Some fields are missings</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <p class="fw-bold">Card#</p>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" placeholder="XXXXXXXXXXXXXXXXX"
+                                    aria-label="number">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <p class="fw-bold">CVC#</p>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" placeholder="0000" aria-label="number">
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <p class="fw-bold">Amount</p>
+                            <div class="d-flex align-items-start">
+                                <p class="fw-bold">$</p>
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" placeholder="Amount"
+                                        aria-label="Amount (to the nearest dollar)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <p class="fw-bold">First Name</p>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="firstname"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <p class="fw-bold">Last Name</p>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="lastname"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <p class="fw-bold">City</p>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="City"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <p class="fw-bold">State</p>
+                            <select class="form-select form-select-sm" aria-label="Small select example">
+                                <option selected>Pick a State</option>
+                                <option value="1">Maracaibo</option>
+                                <option value="2">Mérida</option>
+                                <option value="3">Caracas</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <p class="fw-bold">Postal Code</p>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" aria-label="postal code"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <p class="fw-bold">We accept:</p>
+                            <button type="button" class="btn btn-secondary">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i
+                                            class="fa-brands fa-cc-mastercard"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i
+                                            class="fa-brands fa-cc-visa"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3"><i
+                                            class="fa-brands fa-cc-diners-club"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4"><i
+                                            class="fa-brands fa-cc-amex"></i></label>
+                                </div>
+                            </button>
+
+
+                        </div>
+
+                        <div class="col-2"></div>
+                        <div class="col-6">
+                            <p class="fw-bold">Messages</p>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <p class=".text-secondary">Add any notes here</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-end">
+                        <div class="me-1"><button type="button" class="btn btn-secondary">Cancel</button> </div>
+                        <button type="button" class="btn btn-primary">Send</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
